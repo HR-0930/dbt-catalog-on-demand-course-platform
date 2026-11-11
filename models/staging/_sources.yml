@@ -1,7 +1,7 @@
 sources:
   - name: jaffle_shop
     database: raw
-    schema: jaffle_shop
+    schema: jaffle_shop_catalog
     description: E-commerce data
     tables:
       - name: customers
