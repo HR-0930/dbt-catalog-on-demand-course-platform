@@ -6,6 +6,8 @@ models:
       access: public
       contract:
         enforced: true
+      latest_version_pointer:
+        enabled: false
     columns:
       - name: order_id
         data_type: varchar
