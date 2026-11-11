@@ -1,8 +1,8 @@
 models:
   - name: dim_product_supplies
-    access: public
-    group: product
     config:
+      access: public
+      group: product
       contract:
         enforced: true
     columns:
@@ -18,9 +18,10 @@ models:
           - type: not_null
         tests:
           - accepted_values:
-              values:
-                - "jaffle"
-                - "beverage"
+              arguments:
+                values:
+                  - "jaffle"
+                  - "beverage"
       - name: product_description
         data_type: varchar
       - name: product_price

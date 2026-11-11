@@ -15,8 +15,8 @@ models:
           - not_null
   - name: stg_order_items
     description: staging model for order items source table
-    access: protected
     config:
+      access: protected
       group: product
     columns:
       - name: order_item_id
@@ -32,8 +32,8 @@ models:
           - not_null
   - name: stg_products
     description: staging model for products source table. list of products.
-    access: private
     config:
+      access: private
       group: product
     columns:
       - name: product_id
@@ -42,8 +42,8 @@ models:
           - not_null
   - name: stg_supplies
     description: staging model for supplies source table.
-    access: protected
     config:
+      access: protected
       group: product
     columns:
       - name: supply_id
